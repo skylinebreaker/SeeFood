@@ -53,7 +53,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let request = VNCoreMLRequest(model: model) { (request, error) in
             guard let results = request.results as? [VNClassificationObservation] else {
                 fatalError("Model fails to process image")
-            }
+            }///dewfww/
             
             if let firstResult = results.first {
                 if firstResult.identifier.contains("hotdog") {
